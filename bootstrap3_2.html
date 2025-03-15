@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Feedback</title>
+    
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+<header class="bg-primary text-white text-center py-4">
+    <h1>Welcome to My Portfolio</h1>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="mb-5">
+        <h2 class="text-center">My Portfolio</h2>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3 mb-3 shadow">
+                    <h3>Project 1</h3>
+                    <p>Enhanced description of Project 1 with more details and styling.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 mb-3 shadow">
+                    <h3>Project 2</h3>
+                    <p>Updated description of Project 2 with improvements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h2 class="text-center">Feedback</h2>
+        <div class="card p-4 shadow">
+            <h3>Leave Your Feedback</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2025 Shaheen Begum. All Rights Reserved.</p>
+</footer>
+
+<!-- Local Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
